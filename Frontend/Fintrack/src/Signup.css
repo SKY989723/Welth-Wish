@@ -1,0 +1,217 @@
+.signup-container{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BEBEBE;
+    font-family:Arial, sans-serif;
+    background-image: url(image/login-bg.jpeg);
+}
+.error-message {
+    color: red;
+    font-size: 10px;
+    padding:10px;
+    padding-top: 0;
+    margin: 0;
+}
+.signup-container p{
+    font-size: 18px;
+}
+.signup-container p:last-of-type{
+    margin-top: 0;
+}
+.signup-container .launchpage-cmpyname, .footer{
+    display: none;
+}
+.signup-interior {
+    width:70vw;
+    height:60vh;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.login-content{
+    width: 50%;
+    background-color: #0A2472;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.register-content{
+    text-align: center;
+    box-sizing: border-box;
+    width:50%;
+    padding: 2%;
+}
+.register-content h1{
+    margin: 10px;
+    font: 42px bolder ;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.register-content input{
+    width: 80%;
+    padding: 15px;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #D3D3D3;
+    border: none;
+}
+.register-content button{
+    width:80%;
+    background-color: #0A2472;
+    height:3rem;
+    font-family: sans-serif;
+    font:18px bolder;
+    color: white;
+    border:none;
+    border-radius: 35px;
+}
+.login-content{
+    box-sizing: border-box;
+    color:white;
+    padding:5%;
+    text-align: center;
+}
+.login-content h1{
+    font: 48px bolder ;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.login-content p {
+    padding:20px 15px;
+}
+.login-content button{
+    width:80%;
+    height:3rem;
+    background-color: #0A2472;
+    font-family: sans-serif;
+    font:18px bolder;
+    color: white;
+    border:2px white solid;
+    border-radius: 35px;
+}
+.register-content .result{
+    font-size: medium;
+    color:red;
+    padding:10px;
+    margin:0;
+}
+.password-strength {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.password-strength.weak {
+    color: red;
+}
+
+.password-strength.moderate {
+    color: orange;
+}
+
+.password-strength.strong {
+    color: green;
+}
+
+
+.result{
+    height: 14px;
+}
+@media only screen and (min-width:480px) and (max-width:768px)
+{
+
+    .signup-container{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        background-color: white;
+        background-image: none;
+    }
+    .signup-container .launchpage-cmpyname,.signup-container .footer{
+        display: block;
+        width:100%;
+    }
+    .signup-container .launchpage-cmpyname{
+        background-color: #0A2472;
+        height: 120px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .signup-interior{
+        flex-direction: column;
+        height: auto;        
+        margin:20px 0;
+        width:60%;
+        height: fit-content;
+    }
+    .login-content,.register-content{
+        width: 100%;
+    }
+    .login-content{
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0%;
+    }
+    .login-content h1{
+        font-size: 2.5rem;
+    }
+    .login-content p{
+        font-size: 1rem;
+    }
+    .register-content h1{
+        font-size: 2.5rem;
+    }
+    
+}
+@media only screen and (max-width:479px){
+    .signup-container{
+        display: block;
+        height: fit-content;
+        background-color: #0A2472;
+        background-image: none;
+        
+    }
+    .signup-container .launchpage-cmpyname{
+        display: flex;
+        color: white;
+        height: 80px;
+    }
+    .footer{
+        display: block;
+    }
+    .signup-interior{
+        width: 100vw;
+        height: auto;
+        display: block;
+        box-shadow: none;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .login-content{
+        width: 100%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .login-content h1{
+        font-size: 2rem;
+    }
+    .login-content p{
+        font-size: 1rem;
+    }
+    .register-content{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .register-content h1{
+        font-size: 2rem; 
+    }
+    .register-content p {
+        font-size: 1rem;
+    }
+}
